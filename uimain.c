@@ -19,6 +19,7 @@ int main()
     case 't':
       puts("You selected triangle:");
       print_triangle(5, 7);
+      ptint_square(5, 5);
       break;
     case 's':
       puts("You selected square:");
