@@ -27,7 +27,7 @@ void print_triangle(int leftCol, int size)
 }
 
 //Prints an arrow
-void print_arrow()
+void print_arrow(int leftCol, int size)
 {
   for (int row = 0; row <= size; row++) {
     int minCol = leftCol + size - row, maxCol = leftCol + size + row;
@@ -36,4 +36,10 @@ void print_arrow()
     for ( ; col <= maxCol; col++) putchar('*');
     putchar('\n');
   }
+
+  for (int i = 0; i < 6; i++){
+    for (int j = -1; j < size; j++) putchar(' ');
+    for (int j = 0; j < 7; j++) putchar('*');
+    putchar('\n');
+  } 
 }
